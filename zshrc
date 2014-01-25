@@ -106,3 +106,5 @@ zle -N zle-line-init
 zle -N zle-line-finish
 
 unfunction bind2maps
+
+export LANG=en_US.UTF-8
