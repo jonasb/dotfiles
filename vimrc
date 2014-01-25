@@ -1,0 +1,134 @@
+set nocompatible
+
+call pathogen#infect()
+
+if has('gui_running')
+	colorscheme desert
+	map <silent> <C-CR> :simalt ~x<CR>
+	map <silent> <C-S-CR> :simalt ~R<CR>
+	if has('gui_win32')
+		set guifont=Consolas:h11
+		map <silent> <M-1> :set guifont=Consolas:h9<CR>
+		map	<silent> <M-2> :set guifont=Consolas:h11<CR>
+		map <silent> <M-3> :set guifont=Consolas:h14<CR>
+		map <silent> <M-4> :set guifont=Consolas:h18<CR>
+	else
+		set guifont=Consolas\ 11
+		map <silent> <M-1> :set guifont=Consolas\ 9<CR>
+		map	<silent> <M-2> :set guifont=Consolas\ 11<CR>
+		map <silent> <M-3> :set guifont=Consolas\ 14<CR>
+		map <silent> <M-4> :set guifont=Consolas\ 18<CR>
+	endif
+else
+	set t_Co=256
+	colorscheme desert256
+	set mouse=a
+endif
+if has('gui_win32')
+	set runtimepath^=~/.vim
+endif
+
+set guioptions-=T "hide the toolbar in the GUI
+set guioptions-=m "hide the menu in the GUI
+set guioptions-=r "hide the scrollbar in the GUI
+
+"set cursor line only in active window
+set cursorline
+autocmd WinLeave * set nocursorline
+autocmd WinEnter * set cursorline
+
+"searching settings
+set hlsearch
+set ignorecase "make searching case insensitive
+set smartcase "but if you use any upper case in the search string, make it case sensitive
+set incsearch
+set nowrapscan
+
+syntax enable
+if has('win32')
+	set backupdir=$TEMP/vim//,$TEMP// "~ files
+	set directory=$TEMP/vim//,$TEMP// "swap files
+else
+	set backupdir=~/tmp/vim//,~/tmp//,/tmp/vim//,/tmp// "~ files
+	set directory=~/tmp/vim//,~/tmp//,/tmp/vim,/tmp// "swap files
+endif
+set nomousehide
+set visualbell "don't beep, please
+set history=200 "remember more commands
+
+imap <C-W> <Esc><C-W> "make <C-W><C-W> work in insert mode
+"make nav keys work in visual mode
+vmap <Right> l
+vmap <Up> k
+vmap <Left> h
+vmap <Down> j
+map <C-S-Tab> <C-W>W
+
+" Up, Down, Home and End keys in normal and insert mode
+map <up> gk
+"imap <up> <C-o>gk
+map <down> gj
+"imap <down> <C-o>gj
+"map <home> g<home>
+"imap <home> <C-o>g<home>
+"map <end> g<end>
+"imap <end> <C-o>g<end>
+
+" Disable ctrl-space since it's annoying
+imap <Nul> <Space>
+map  <Nul> <Nop>
+vmap <Nul> <Nop>
+cmap <Nul> <Nop>
+nmap <Nul> <Nop>
+
+" Don't break words in middle
+set linebreak
+
+" Show incomplete paragraphs even when they don't fit on screen (avoid @'s)
+set display+=lastline
+
+" Indentation
+autocmd BufReadPost * :DetectIndent
+set noexpandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+let g:detectindent_preferred_indent=4
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype jade setlocal ts=2 sts=2 sw=2
+filetype plugin indent on "enable ftplugins to change indentation
+
+" Folding
+set foldlevel=1
+set foldnestmax=2
+set foldmethod=syntax
+
+
+map <silent> <S-F12> :call BufferList()<CR>
+map <silent> <F12> :NERDTreeToggle<CR>
+if has('win32')
+	set grepprg=ack
+	set shellpipe=2>&1\ \|\ perl\ d:\\scripts\\tee.pl\ %s "make sure the output from :make and :grep is echoed to the screen
+	set shellredir=2>&1\ \|\ perl\ d:\\scripts\\tee.pl\ %s "make sure the output from e.g. :system is echoed to the screen
+endif
+
+"omni-cpp-complete settings
+" hide preview window with completion menu
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+let g:alternateNoDefaultAlternate = 1 " don't create new files if the alternate isn't found
+let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,reg:/inc/src/g'
+set autowrite
+
+autocmd FileType mail set textwidth=0 "disable text wrapping for e-mails
+
+" fuzzyfinder settings
+map <LocalLeader>b :FufBuffer<CR>
+map <LocalLeader>f :FufFile<CR>
+map <LocalLeader>t :FufTag<CR>
+
+" localvimrc settings
+let g:localvimrc_ask = 0
+
+let g:ackprg="ag"

@@ -1,0 +1,20 @@
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+[user]
+	name = Jonas Bengtsson
+	email = jonas.b@gmail.com
+[alias]
+	st = status
+	ds = diff --staged
+	l = log --graph --decorate --pretty=oneline --abbrev-commit
+	ll = log --stat --decorate --abbrev-commit
+[diff]
+	renames = true
+[branch]
+	autosetuprebase = always
+[push]
+	default = tracking
+[core]
+	excludesfile = ~/.gitglobalignore
