@@ -1,63 +1,63 @@
-[submodule "vim/bundle/detectindent"]
-	path = vim/bundle/detectindent
+[submodule "home/dot/vim/bundle/detectindent"]
+	path = home/dot/vim/bundle/detectindent
 	url = git@github.com:jonasb/detectindent.git
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
+[submodule "home/dot/vim/bundle/nerdtree"]
+	path = home/dot/vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
+[submodule "home/dot/vim/bundle/vim-markdown"]
+	path = home/dot/vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "vim/bundle/vim-scala"]
-	path = vim/bundle/vim-scala
+[submodule "home/dot/vim/bundle/vim-scala"]
+	path = home/dot/vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "vim/vim-pathogen"]
-	path = vim/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen
-[submodule "vim/bundle/vim-fugitive"]
-	path = vim/bundle/vim-fugitive
+[submodule "home/dot/vim/bundle/vim-fugitive"]
+	path = home/dot/vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/vim-space"]
-	path = vim/bundle/vim-space
+[submodule "home/dot/vim/bundle/vim-space"]
+	path = home/dot/vim/bundle/vim-space
 	url = git@github.com:jonasb/vim-space.git
-[submodule "vim/bundle/hammer.vim"]
-	path = vim/bundle/hammer.vim
+[submodule "home/dot/vim/bundle/hammer.vim"]
+	path = home/dot/vim/bundle/hammer.vim
 	url = https://github.com/matthias-guenther/hammer.vim.git
-[submodule "vim/bundle/vim-exjumplist"]
-	path = vim/bundle/vim-exjumplist
+[submodule "home/dot/vim/bundle/vim-exjumplist"]
+	path = home/dot/vim/bundle/vim-exjumplist
 	url = https://github.com/kana/vim-exjumplist
-[submodule "vim/bundle/vimroom"]
-	path = vim/bundle/vimroom
+[submodule "home/dot/vim/bundle/vimroom"]
+	path = home/dot/vim/bundle/vimroom
 	url = https://github.com/mikewest/vimroom
-[submodule "vim/bundle/vim-arduino"]
-	path = vim/bundle/vim-arduino
+[submodule "home/dot/vim/bundle/vim-arduino"]
+	path = home/dot/vim/bundle/vim-arduino
 	url = git@github.com:jonasb/vim-arduino.git
-[submodule "vim/bundle/camelcasemotion"]
-	path = vim/bundle/camelcasemotion
+[submodule "home/dot/vim/bundle/camelcasemotion"]
+	path = home/dot/vim/bundle/camelcasemotion
 	url = git@github.com:jonasb/camelcasemotion.git
-[submodule "vim/bundle/vim-coffee"]
-	path = vim/bundle/vim-coffee
+[submodule "home/dot/vim/bundle/vim-coffee"]
+	path = home/dot/vim/bundle/vim-coffee
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/vim-less"]
-	path = vim/bundle/vim-less
+[submodule "home/dot/vim/bundle/vim-less"]
+	path = home/dot/vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
-[submodule "vim/bundle/vim-matchit"]
-	path = vim/bundle/vim-matchit
+[submodule "home/dot/vim/bundle/vim-matchit"]
+	path = home/dot/vim/bundle/vim-matchit
 	url = https://github.com/tsaleh/vim-matchit.git
-[submodule "vim/bundle/YouCompleteMe"]
-	path = vim/bundle/YouCompleteMe
+[submodule "home/dot/vim/bundle/YouCompleteMe"]
+	path = home/dot/vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule "vim/bundle/vim-smali"]
-	path = vim/bundle/vim-smali
+[submodule "home/dot/vim/bundle/vim-smali"]
+	path = home/dot/vim/bundle/vim-smali
 	url = https://github.com/kelwin/vim-smali.git
-[submodule "vim/bundle/vim-localvimrc"]
-	path = vim/bundle/vim-localvimrc
+[submodule "home/dot/vim/bundle/vim-localvimrc"]
+	path = home/dot/vim/bundle/vim-localvimrc
 	url = https://github.com/embear/vim-localvimrc
-[submodule "vim/bundle/vim-fuzzyfinder"]
-	path = vim/bundle/vim-fuzzyfinder
+[submodule "home/dot/vim/bundle/vim-fuzzyfinder"]
+	path = home/dot/vim/bundle/vim-fuzzyfinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
-[submodule "vim/bundle/vim-l9"]
-	path = vim/bundle/vim-l9
+[submodule "home/dot/vim/bundle/vim-l9"]
+	path = home/dot/vim/bundle/vim-l9
 	url = https://github.com/vim-scripts/L9.git
-[submodule "vim/bundle/bufferlist"]
-	path = vim/bundle/bufferlist
+[submodule "home/dot/vim/bundle/bufferlist"]
+	path = home/dot/vim/bundle/bufferlist
 	url = https://github.com/vim-scripts/bufferlist.vim.git
+[submodule "home/dot/vim/vim-pathogen"]
+	path = home/dot/vim/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
