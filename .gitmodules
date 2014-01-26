@@ -67,3 +67,6 @@
 [submodule "home/bin/willgit"]
 	path = home/bin/willgit
 	url = git://gitorious.org/willgit/mainline.git/
+[submodule "liquidprompt"]
+	path = liquidprompt
+	url = https://github.com/nojhan/liquidprompt.git
