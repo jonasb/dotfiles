@@ -42,12 +42,6 @@ function link_file() {
   fi
 }
 
-info "Update source"
-(
-cd "$THIS_DIR"
-git submodule update --init --recursive
-)
-
 info "Link files"
 link_files "$THIS_DIR/home/dot" ~ .
 link_files "$THIS_DIR/home" ~ ''
@@ -58,3 +52,4 @@ vim -e -s <<-EOF
 :Helptags
 :quit
 EOF
+mkdir -p ~/tmp/vim
