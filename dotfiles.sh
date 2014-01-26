@@ -42,6 +42,9 @@ function link_file() {
   fi
 }
 
+info "Ensure dirs exist"
+mkdir -pv ~/tmp/vim ~/.config
+
 info "Link files"
 link_files "$THIS_DIR/home/dot" ~ .
 link_files "$THIS_DIR/home" ~ ''
@@ -52,4 +55,3 @@ vim -e -s <<-EOF
 :Helptags
 :quit
 EOF
-mkdir -p ~/tmp/vim
