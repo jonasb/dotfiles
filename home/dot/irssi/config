@@ -260,7 +260,8 @@ keyboard = (
   { key = "meta2-21;2~"; id = "key"; data = "sF10"; },
   { key = "meta2-24;2~"; id = "key"; data = "sF12"; },
   { key = "meta2-23;2~"; id = "key"; data = "sF11"; },
-  { key = "F12"; id = "command"; data = "clear "; }
+  { key = "F12"; id = "command"; data = "clear "; },
+  { key = "meta-c"; id = "command"; data = "clear"; }
 );
 hilights = (
   { text = "jonasb"; nick = "yes"; word = "yes"; },
