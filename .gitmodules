@@ -1,6 +1,6 @@
 [submodule "home/dot/vim/bundle/detectindent"]
 	path = home/dot/vim/bundle/detectindent
-	url = git@github.com:jonasb/detectindent.git
+	url = https://github.com/jonasb/detectindent.git
 [submodule "home/dot/vim/bundle/nerdtree"]
 	path = home/dot/vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -15,7 +15,7 @@
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "home/dot/vim/bundle/vim-space"]
 	path = home/dot/vim/bundle/vim-space
-	url = git@github.com:jonasb/vim-space.git
+	url = https://github.com/jonasb/vim-space.git
 [submodule "home/dot/vim/bundle/hammer.vim"]
 	path = home/dot/vim/bundle/hammer.vim
 	url = https://github.com/matthias-guenther/hammer.vim.git
@@ -27,10 +27,10 @@
 	url = https://github.com/mikewest/vimroom
 [submodule "home/dot/vim/bundle/vim-arduino"]
 	path = home/dot/vim/bundle/vim-arduino
-	url = git@github.com:jonasb/vim-arduino.git
+	url = https://github.com/jonasb/vim-arduino.git
 [submodule "home/dot/vim/bundle/camelcasemotion"]
 	path = home/dot/vim/bundle/camelcasemotion
-	url = git@github.com:jonasb/camelcasemotion.git
+	url = https://github.com/jonasb/camelcasemotion.git
 [submodule "home/dot/vim/bundle/vim-coffee"]
 	path = home/dot/vim/bundle/vim-coffee
 	url = https://github.com/kchmck/vim-coffee-script.git
