@@ -61,3 +61,6 @@
 [submodule "home/dot/vim/vim-pathogen"]
 	path = home/dot/vim/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
+[submodule "home/dot/vim/bundle/golden-ratio"]
+	path = home/dot/vim/bundle/golden-ratio
+	url = https://github.com/roman/golden-ratio.git
