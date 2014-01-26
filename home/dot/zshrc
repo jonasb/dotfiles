@@ -31,6 +31,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+~/dotfiles/check-for-update.sh
+
 source ~/dotfiles/liquidprompt/liquidprompt
 
 if [[ "$VENDOR" == "apple" ]]; then
