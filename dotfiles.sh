@@ -51,6 +51,7 @@ git submodule update --init --recursive
 info "Link files"
 link_files "$THIS_DIR/home/dot" ~ .
 link_files "$THIS_DIR/home" ~ ''
+link_files "$THIS_DIR/config" ~/.config ''
 
 info "Update vim docs"
 vim -e -s <<-EOF
