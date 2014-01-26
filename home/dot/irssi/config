@@ -227,7 +227,11 @@ settings = {
     user_name = "jonasb";
     nick = "jonasb";
   };
-  "fe-text" = { actlist_sort = "refnum"; };
+  "fe-text" = {
+    actlist_sort = "refnum";
+    indent = "2";
+    lag_min_show = "5sec";
+  };
   "fe-common/core" = {
     bell_beeps = "yes";
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
