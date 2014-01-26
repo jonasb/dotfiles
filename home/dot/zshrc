@@ -21,7 +21,7 @@ export ZSH_THEME=""
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github history-substring-search command-not-found rvm vagrant npm virtualenv virtualenvwrapper)
+plugins=(git github history-substring-search command-not-found rvm vagrant npm)
 if [[ "$VENDOR" == "apple" ]]; then
 	plugins=("${plugins[@]}" brew osx) # add
 	plugins=("${(@)plugins:#command-not-found}") # remove
