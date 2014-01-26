@@ -70,3 +70,6 @@
 [submodule "liquidprompt"]
 	path = liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
+[submodule "home/bin/pyPushBullet"]
+	path = home/bin/pyPushBullet
+	url = https://github.com/Azelphur/pyPushBullet.git
