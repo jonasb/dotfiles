@@ -129,6 +129,14 @@ map <LocalLeader>f :FufFile<CR>
 map <LocalLeader>t :FufTag<CR>
 
 " localvimrc settings
-let g:localvimrc_ask = 0
+let g:localvimrc_ask = 1
+let g:localvimrc_sandbox = 0
+let g:localvimrc_persistent = 2
 
 let g:ackprg="ag"
+
+"let &viminfo = &viminfo . ',!'
+"let g:loaded_youcompleteme = 1
+
+" zip files
+au BufReadCmd *.jar,*.xpi,*.apk call zip#Browse(expand("<amatch>"))
