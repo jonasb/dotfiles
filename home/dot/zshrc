@@ -31,7 +31,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 if [[ "$VENDOR" == "apple" ]]; then
-	alias vim='mvim -v'
 	alias sed='/usr/local/bin/gsed'
 	alias tmux='tmux -2'
 
