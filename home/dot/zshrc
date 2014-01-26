@@ -21,7 +21,7 @@ export ZSH_THEME="arrow"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github history-substring-search command-not-found rvm vagrant npm)
+plugins=(git github history-substring-search command-not-found rvm vagrant npm virtualenv virtualenvwrapper)
 if [[ "$VENDOR" == "apple" ]]; then
 	plugins=("${plugins[@]}" brew osx) # add
 	plugins=("${(@)plugins:#command-not-found}") # remove
@@ -31,13 +31,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 if [[ "$VENDOR" == "apple" ]]; then
-	#alias vim='mvim -v'
+	alias vim='mvim -v'
 	alias sed='/usr/local/bin/gsed'
 	alias tmux='tmux -2'
-	export PATH=/usr/local/bin:$PATH
+
+	fpath=(/usr/local/share/zsh-completions $fpath)
 fi
 
-fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Enable vi-mode
 bindkey -v
@@ -106,5 +106,3 @@ zle -N zle-line-init
 zle -N zle-line-finish
 
 unfunction bind2maps
-
-export LANG=en_US.UTF-8
