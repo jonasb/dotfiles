@@ -17,6 +17,7 @@ function link_files() {
   local prefix="$3"
 
   for file in "$source"/*; do
+    [ "$(basename "$file")" = "dot" ] && continue
     link_file "$file" "$target" "$prefix"
   done
 }
@@ -49,6 +50,7 @@ git submodule update --init --recursive
 
 info "Link files"
 link_files "$THIS_DIR/home/dot" ~ .
+link_files "$THIS_DIR/home" ~ ''
 
 info "Update vim docs"
 vim -e -s <<-EOF

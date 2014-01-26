@@ -64,3 +64,6 @@
 [submodule "home/dot/vim/bundle/golden-ratio"]
 	path = home/dot/vim/bundle/golden-ratio
 	url = https://github.com/roman/golden-ratio.git
+[submodule "home/bin/willgit"]
+	path = home/bin/willgit
+	url = git://gitorious.org/willgit/mainline.git/
