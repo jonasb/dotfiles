@@ -6,3 +6,5 @@ if [[ "$VENDOR" == "apple" ]]; then
 fi
 
 PATH=$PATH:~/.rvm/bin # Add RVM to PATH for scripting
+
+[ -f ~/.zshenv-local ] && source ~/.zshenv-local
