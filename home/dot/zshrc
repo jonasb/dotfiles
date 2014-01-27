@@ -43,6 +43,9 @@ if [[ "$VENDOR" == "apple" ]]; then
 fi
 
 alias gst=git\ status
+alias gds=git\ diff\ --cached
+alias gap=git\ add\ --patch
+alias gcp=git\ checkout\ --patch
 
 export EDITOR=vim
 
