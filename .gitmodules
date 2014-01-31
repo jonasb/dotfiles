@@ -73,3 +73,6 @@
 [submodule "home/bin/pyPushBullet"]
 	path = home/bin/pyPushBullet
 	url = https://github.com/Azelphur/pyPushBullet.git
+[submodule "home/dot/vim/bundle/vim-golang"]
+	path = home/dot/vim/bundle/vim-golang
+	url = https://github.com/jnwhiteh/vim-golang.git
