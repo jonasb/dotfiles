@@ -4,7 +4,7 @@ set -e -u
 THIS_DIR="$(pushd "$(dirname "$0")" > /dev/null; pwd; popd > /dev/null)"
 LAST_UPDATE_FILE="$THIS_DIR/.last-update"
 LOCK_FILE="$THIS_DIR/.update.lock"
-epoch_target=7
+EPOCH_TARGET=3
 
 function current_epoch_days() {
   echo $(($(date +%s) / 60 / 60 / 24))
@@ -27,7 +27,7 @@ function update() {
 # abort if LAST_UPDATE_FILE doesn't exist or doesn't contain LAST_EPOCH
 [ -z "${LAST_EPOCH+x}" ] && update_last_update_file && exit 0
 
-epoch_diff=$(($(current_epoch_days) - $LAST_EPOCH))
-if [ $epoch_diff -gt $epoch_target ]; then
+EPOCH_DIFF=$(($(current_epoch_days) - $LAST_EPOCH))
+if [ $EPOCH_DIFF -gt $EPOCH_TARGET ]; then
   update
 fi
