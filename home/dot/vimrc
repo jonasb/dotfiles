@@ -81,6 +81,9 @@ vmap <Nul> <Nop>
 cmap <Nul> <Nop>
 nmap <Nul> <Nop>
 
+" What should backspace do?
+set backspace=indent,eol,start
+
 " Don't break words in middle
 set linebreak
 
