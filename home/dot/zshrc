@@ -38,6 +38,7 @@ source ~/dotfiles/liquidprompt/liquidprompt
 if [[ "$VENDOR" == "apple" ]]; then
 	alias sed='/usr/local/bin/gsed'
 	alias tmux='tmux -2'
+	[ -d '/Applications/Gimp.app' ] && alias gimp='open -a /Applications/Gimp.app'
 
 	fpath=(/usr/local/share/zsh-completions $fpath)
 fi
