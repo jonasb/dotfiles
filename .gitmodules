@@ -76,3 +76,6 @@
 [submodule "home/dot/vim/bundle/vim-golang"]
 	path = home/dot/vim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "home/dot/vim/bundle/vaxe"]
+	path = home/dot/vim/bundle/vaxe
+	url = https://github.com/jdonaldson/vaxe.git
