@@ -9,8 +9,16 @@ $VERSION = "0.1";
   description => 'Uses PushBullet to notify user of hilights and private messages',
 );
 
+sub clean_string {
+  my ($string) = @_;
+  $string =~ s/[^A-Za-zåäöÅÄÖ0-9\-\., !?\/]//g;
+  return $string;
+}
+
 sub notify {
   my ($server, $title, $body) = @_;
+  $title = clean_string($title);
+  $body = clean_string($body);
   $server->command("EXEC - pushbullet.sh '$title' '$body'");
 }
 
