@@ -39,7 +39,7 @@
 	url = https://github.com/groenewege/vim-less.git
 [submodule "home/dot/vim/bundle/vim-matchit"]
 	path = home/dot/vim/bundle/vim-matchit
-	url = https://github.com/tsaleh/vim-matchit.git
+	url = https://github.com/vim-scripts/matchit.zip.git
 [submodule "home/dot/vim/bundle/YouCompleteMe"]
 	path = home/dot/vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
