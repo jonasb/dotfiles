@@ -15,8 +15,11 @@ function update_last_update_file() {
 }
 
 function update() {
-  [ -f "$LOCK_FILE" ] && echo "Update in progress, abort" && exit 0
-  touch "$LOCK_FILE"
+  TMP_LOCK_FILE="$(mktemp -t lock-file-XXXX)"
+  set +e
+  cp -n "$TMP_LOCK_FILE" "$LOCK_FILE"
+  [ "$?" != '0' ] && echo "Update in progress, abort" && exit 0
+  set -e
   success=true
   "$THIS_DIR/update.sh" || success=false
   rm "$LOCK_FILE"
