@@ -79,3 +79,6 @@
 [submodule "home/dot/vim/bundle/vaxe"]
 	path = home/dot/vim/bundle/vaxe
 	url = https://github.com/jdonaldson/vaxe.git
+[submodule "home/dot/vim/bundle/dirdiff"]
+	path = home/dot/vim/bundle/dirdiff
+	url = https://github.com/vim-scripts/DirDiff.vim.git
