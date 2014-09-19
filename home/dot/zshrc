@@ -48,6 +48,8 @@ alias gds=git\ diff\ --cached
 alias gap=git\ add\ --patch
 alias gcp=git\ checkout\ --patch
 
+vimgrep() { vim +"grep ${(q)@}" }
+
 export EDITOR=vim
 
 # Enable vi-mode
