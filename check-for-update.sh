@@ -4,7 +4,7 @@ set -e -u
 THIS_DIR="$(pushd "$(dirname "$0")" > /dev/null; pwd; popd > /dev/null)"
 LAST_UPDATE_FILE="$THIS_DIR/.last-update"
 LOCK_FILE="$THIS_DIR/.update.lock"
-EPOCH_TARGET=3
+EPOCH_TARGET=7
 
 function current_epoch_days() {
   echo $(($(date +%s) / 60 / 60 / 24))
