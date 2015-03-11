@@ -64,9 +64,6 @@
 [submodule "home/dot/vim/bundle/golden-ratio"]
 	path = home/dot/vim/bundle/golden-ratio
 	url = https://github.com/roman/golden-ratio.git
-[submodule "home/bin/willgit"]
-	path = home/bin/willgit
-	url = git://gitorious.org/willgit/mainline.git/
 [submodule "liquidprompt"]
 	path = liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
@@ -85,3 +82,6 @@
 [submodule "home/dot/vim/bundle/vim-gradle"]
 	path = home/dot/vim/bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle.git
+[submodule "home/bin/willgit"]
+	path = home/bin/willgit
+	url = https://gitorious.org/willgit/mainline.git
