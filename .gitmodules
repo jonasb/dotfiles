@@ -67,3 +67,6 @@
 [submodule "home/bin/willgit"]
 	path = home/bin/willgit
 	url = https://github.com/DanielVartanov/willgit.git
+[submodule "home/dot/vim/bundle/kotlin-vim"]
+	path = home/dot/vim/bundle/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim
