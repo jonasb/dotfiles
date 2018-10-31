@@ -142,4 +142,4 @@ let g:ackprg="ag"
 "let g:loaded_youcompleteme = 1
 
 " zip files
-au BufReadCmd *.jar,*.xpi,*.apk,*.aar call zip#Browse(expand("<amatch>"))
+au BufReadCmd *.jar,*.xpi,*.apk,*.aar,*.appx call zip#Browse(expand("<amatch>"))
