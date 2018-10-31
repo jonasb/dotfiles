@@ -31,6 +31,15 @@ class AdbScreenCapCommand(object):
           return int(match.group(0))
     raise Exception("Couldn't detect screen orientation")
 
+  def enter_demo(self):
+    self.adb('shell', 'am', 'broadcast', '-a', 'com.android.systemui.demo', '--es', 'command', 'enter')
+    self.adb('shell', 'am', 'broadcast', '-a', 'com.android.systemui.demo', '--es', 'command', 'clock', '--es', 'hhmm', '0900')
+    self.adb('shell', 'am', 'broadcast', '-a', 'com.android.systemui.demo', '--es', 'command', 'battery', '--es', 'level', '100', '--es', 'plugged', 'false')
+    self.adb('shell', 'am', 'broadcast', '-a', 'com.android.systemui.demo', '--es', 'command', 'notifications', '--es', 'visible', 'false')
+
+  def leave_demo(self):
+    self.adb('shell', 'am', 'broadcast', '-a', 'com.android.systemui.demo', '--es', 'command', 'exit')
+
   def screen_cap(self):
     self.adb('shell', 'screencap', '-p', DEVICE_TEMP_PATH)
     self.adb('pull', DEVICE_TEMP_PATH, self.output_path)
@@ -50,7 +59,11 @@ class AdbScreenCapCommand(object):
       self.ensure_executables_exist(OPEN_CMD)
 
     screen_orientation = self.detect_screen_orientation()
+    if self.options.demo:
+      self.enter_demo()
     self.screen_cap()
+    if self.options.demo:
+      self.leave_demo()
     self.rotate_image(screen_orientation)
     print('Captured screen to %s' % self.output_path)
     if self.options.open:
@@ -61,6 +74,7 @@ def main():
   parser = OptionParser(usage = 'usage: %prog [options] [filename]')
   parser.add_option('-f', '--force', dest='overwrite', action='store_true', default=False)
   parser.add_option('-o', '--open', dest='open', action='store_true', default=False)
+  parser.add_option('-d', '--demo', dest='demo', action='store_true', default=False)
   (options, args) = parser.parse_args()
   if len(args) > 1:
     parser.error("Only one filename can be specified (got %d)" % len(args))
