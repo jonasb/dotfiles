@@ -121,3 +121,5 @@ zle -N zle-line-finish
 unfunction bind2maps
 
 [ -f ~/.zshrc-local ] && source ~/.zshrc-local
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
