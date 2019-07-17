@@ -233,7 +233,6 @@ settings = {
     lag_min_show = "5sec";
   };
   "fe-common/core" = {
-    bell_beeps = "yes";
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
   };
 };
