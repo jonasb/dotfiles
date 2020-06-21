@@ -26,6 +26,10 @@ if [[ "$VENDOR" == "apple" ]]; then
 	plugins=("${plugins[@]}" brew osx) # add
 	plugins=("${(@)plugins:#command-not-found}") # remove
 fi
+if [[ -d ~/.oh-my-zsh/custom/plugins/zsh-nvm ]]; then
+    export NVM_AUTO_USE=true
+    plugins+=(zsh-nvm)
+fi
 
 source $ZSH/oh-my-zsh.sh
 
