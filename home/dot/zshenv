@@ -1,5 +1,9 @@
 export PATH=~/bin:$PATH
+
+# run `locale` to debug
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
 if [[ "$VENDOR" == "apple" ]]; then
 	export PATH=~/bin/osx:$PATH
 	export PATH=/usr/local/bin:$PATH
