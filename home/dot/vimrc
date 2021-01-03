@@ -131,11 +131,6 @@ map <LocalLeader>b :FufBuffer<CR>
 map <LocalLeader>f :FufFile<CR>
 map <LocalLeader>t :FufTag<CR>
 
-" localvimrc settings
-let g:localvimrc_ask = 1
-let g:localvimrc_sandbox = 0
-let g:localvimrc_persistent = 2
-
 let g:ackprg="ag"
 
 "let &viminfo = &viminfo . ',!'
