@@ -31,9 +31,6 @@
 [submodule "home/dot/vim/bundle/vim-smali"]
 	path = home/dot/vim/bundle/vim-smali
 	url = https://github.com/kelwin/vim-smali.git
-[submodule "home/dot/vim/bundle/vim-localvimrc"]
-	path = home/dot/vim/bundle/vim-localvimrc
-	url = https://github.com/embear/vim-localvimrc
 [submodule "home/dot/vim/bundle/vim-fuzzyfinder"]
 	path = home/dot/vim/bundle/vim-fuzzyfinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
