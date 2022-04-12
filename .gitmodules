@@ -7,9 +7,6 @@
 [submodule "home/dot/vim/bundle/vim-markdown"]
 	path = home/dot/vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "home/dot/vim/bundle/vim-fugitive"]
-	path = home/dot/vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "home/dot/vim/bundle/vim-space"]
 	path = home/dot/vim/bundle/vim-space
 	url = https://github.com/jonasb/vim-space.git
