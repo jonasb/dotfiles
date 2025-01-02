@@ -23,7 +23,7 @@ export ZSH_THEME=""
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(github history-substring-search command-not-found rvm vagrant npm)
 if [[ "$VENDOR" == "apple" ]]; then
-	plugins=("${plugins[@]}" brew osx) # add
+	plugins=("${plugins[@]}" brew macos) # add
 	plugins=("${(@)plugins:#command-not-found}") # remove
 fi
 if [[ -d ~/.oh-my-zsh/custom/plugins/zsh-nvm ]]; then
