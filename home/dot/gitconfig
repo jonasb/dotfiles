@@ -16,6 +16,8 @@
 	autosetuprebase = always
 [push]
 	default = tracking
+[rebase]
+	autoStash = true
 [core]
 	excludesfile = ~/.gitglobalignore
 [pager]

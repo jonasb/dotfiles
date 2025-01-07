@@ -106,6 +106,8 @@ set foldlevel=1
 set foldnestmax=2
 set foldmethod=syntax
 
+" Set regexp engine to auto to fix slow syntax highlighting
+set regexpengine=0
 
 map <silent> <S-F12> :call BufferList()<CR>
 map <silent> <F12> :NERDTreeToggle<CR>
