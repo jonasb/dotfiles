@@ -127,6 +127,6 @@ unfunction bind2maps
 
 [ -f ~/.zshrc-local ] && source ~/.zshrc-local
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -x "$(command -v fzf)" ] && source <(fzf --zsh)
 
 [ -f ~/bin/zsh/pnpm-completion.sh ] && source ~/bin/zsh/pnpm-completion.sh
