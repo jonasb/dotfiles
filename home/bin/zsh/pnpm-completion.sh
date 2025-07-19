@@ -1,11 +1,11 @@
 #compdef pnpm
 ###-begin-pnpm-completion-###
 if type compdef &>/dev/null; then
-  _pnpm_completion () {
+  _pnpm_completion() {
     local reply
     local si=$IFS
 
-    IFS=$'\n' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" SHELL=zsh pnpm completion-server -- "${words[@]}"))
+    IFS=$'\n' reply=($(COMP_CWORD="$((CURRENT - 1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" SHELL=zsh pnpm completion-server -- "${words[@]}"))
     IFS=$si
 
     if [ "$reply" = "__tabtab_complete_files__" ]; then
@@ -26,3 +26,4 @@ if type compdef &>/dev/null; then
 fi
 ###-end-pnpm-completion-###
 
+# generate using: pnpm completion zsh
