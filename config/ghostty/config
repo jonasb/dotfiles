@@ -43,5 +43,4 @@
 # resize-overlay-duration = 4s 200ms
 
 copy-on-select = clipboard
-theme = dark:catppuccin-frappe,light:catppuccin-latte
-
+theme = dark:Catppuccin Frappe,light:Catppuccin Latte
